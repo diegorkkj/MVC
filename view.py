@@ -42,11 +42,13 @@ while sair == True:
             limpar()
 
         case 4:
+            limpar()
+            print("Saindo...")
+            parar()
             sair=False        
     
         case _:
             limpar()
             print("Opção inválida")
-            print("")
             parar()
             limpar()
