@@ -39,7 +39,7 @@ class ControllerListarTarefa():
 todo = ToDO()
 
 def obter_opcao():
-        opcao = input("Digite a opção desejada: ")
+        opcao = input(">>> ")
         if opcao.isdigit():
             return int(opcao)
         else:

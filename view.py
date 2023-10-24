@@ -6,11 +6,11 @@ sair = True
 
 while sair == True:
     print("Software de gerenciamento de tarefas")
-    print("1 - Adicionar tarefa")
-    print("2 - Excluir tarefa")
-    print("3 - Listar tarefas")
-    print("4 - Sair")
-    print("")
+    print("[1] - Adicionar tarefa")
+    print("[2] - Excluir tarefa")
+    print("[3] - Listar tarefas")
+    print("[4] - Sair")
+    print("Digite o numero equivalente a opção que deseja")
 
     opcao = obter_opcao()
 
