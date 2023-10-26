@@ -8,11 +8,11 @@ while sair == True:
     limpar()
     print("Software de gerenciamento de tarefas")
     print("[1] - Adicionar tarefa")
-    print("[2] - Excluir tarefa")
-    print("[3] - Listar tarefas")
-    print("[4] - Listar tarefas concluidas")
-    print("[5] - Concluir tarefa")
-    print("[6] - Alterar tarefa")
+    print("[2] - Listar tarefas")
+    print("[3] - Alterar tarefa")
+    print("[4] - Concluir tarefa")
+    print("[5] - Listar tarefa concluida")
+    print("[6] - Excluir tarefa")
     print("[7] - Sair")
     print("Digite o numero equivalente a opção que deseja")
 
@@ -29,21 +29,17 @@ while sair == True:
 
         case 2:
             limpar()
-            listarTarefa=ControllerListarTarefa()
-            excluir = (input("Digite o número da tarefa que deseja excluir: "))
-            excluirTarefa=ControllerExcluirTarefa(excluir)
-            listarTarefa=ControllerListarTarefa()
-            parar()
-            limpar()
-
-        case 3:
-            limpar()
             print("TAREFAS")
             print("")
             listar_tarefas()
             print("")
             parar()
             limpar()
+
+        case 3:
+            limpar()
+            print("Ta em obras deve")
+            parar()
 
         case 4:
             limpar()
@@ -57,8 +53,12 @@ while sair == True:
 
         case 6:
             limpar()
-            print("Ta em obras deve")
+            listarTarefa=ControllerListarTarefa()
+            excluir = (input("Digite o número da tarefa que deseja excluir: "))
+            excluirTarefa=ControllerExcluirTarefa(excluir)
+            listarTarefa=ControllerListarTarefa()
             parar()
+            limpar()
 
         case 7:
             limpar()

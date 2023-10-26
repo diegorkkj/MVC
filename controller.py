@@ -35,6 +35,9 @@ class ControllerListarTarefa():
         except Exception as erro:
             print(f"Erro: {erro}")
 
+class Controller:
+    pass
+
 
 todo = ToDO()
 
