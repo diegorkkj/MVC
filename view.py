@@ -5,11 +5,15 @@ from dao import *
 sair = True
 
 while sair == True:
+    limpar()
     print("Software de gerenciamento de tarefas")
     print("[1] - Adicionar tarefa")
     print("[2] - Excluir tarefa")
     print("[3] - Listar tarefas")
-    print("[4] - Sair")
+    print("[4] - Listar tarefas concluidas")
+    print("[5] - Concluir tarefa")
+    print("[6] - Alterar tarefa")
+    print("[7] - Sair")
     print("Digite o numero equivalente a opção que deseja")
 
     opcao = obter_opcao()
@@ -43,9 +47,24 @@ while sair == True:
 
         case 4:
             limpar()
+            print("Ta em obras deve")
+            parar()
+
+        case 5:
+            limpar()
+            print("Ta em obras deve")
+            parar()
+
+        case 6:
+            limpar()
+            print("Ta em obras deve")
+            parar()
+
+        case 7:
+            limpar()
             print("Saindo...")
             parar()
-            sair=False        
+            sair=False    
     
         case _:
             limpar()
